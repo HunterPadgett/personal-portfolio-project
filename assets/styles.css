@@ -1,8 +1,9 @@
+/*** universal  ***/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 /*** background image ***/
@@ -34,11 +35,13 @@ header {
   }
 
   nav ul {
+    margin: 0.3rem;
     flex-direction: row;
   }
 
-  nav li {
-    margin: 0.5rem 0;
+  nav ul li a {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -52,7 +55,7 @@ header {
 
 
 .name h1 {
-  margin: 0;
+  margin: 0.3rem;
 }
 
 
@@ -85,7 +88,7 @@ nav ul {
 nav ul li a{
   color: rgb(219, 229, 231);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* hover and click effects */
@@ -100,3 +103,51 @@ nav ul li a:active {
   color: white;
   text-transform: uppercase;
 }
+
+/*** hero image ***/
+figure {
+  width: 670px;
+  display: flex;
+  
+}
+
+figure img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  figure {
+    width: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  figure {
+   width: auto;
+  }
+}
+
+/*** ABOUT ME ***/
+.about-me {
+  background-color: rgba(82, 98, 102, 0.829);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-me h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem;
+  font-family: monospace;
+}
+
