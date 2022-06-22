@@ -120,6 +120,7 @@ figure img {
   object-fit: contain;
 }
 
+/* hero image for mobile */
 @media (max-width: 640px) {
   figure {
     width: auto;
@@ -150,6 +151,7 @@ figure img {
   font-family: 'Poppins', sans-serif;
 }
 
+/* about me for mobile */
 @media (max-width: 640px) {
   .about-me p {
     font-size: 0.8rem;
@@ -160,201 +162,8 @@ figure img {
 }
 
 /*** WORK SECTION ***/
-/** example project 2 **/
-.smaller-work-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  padding-bottom: 2rem;
-  
-}
-
-@media (max-width: 640px) {
-  .smaller-work-container {
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    align-content: center;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    /* margin-top: 30px; */
-    position: relative;
-    overflow: hidden; 
-  }
-}
-
-/*** project example 2 ***/
-/* styling for desktop devices */
-.small-work-1 {
-  padding: 10px;
-  width: 70%;
-  display: flex;
-  flex-direction: column-reverse;
-  color: white;
-  margin: auto;
-}
-
-.small-work-1 img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.small-work-1 .content {
-  margin: auto;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 18.72px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-
-/* styling for mobile screens */
-@media (min-width: 640px) {
-  .small-work-1 {
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    width: 40%;
-    align-content: center;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    margin-top: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-  .small-work-1 img {
-    display: block;
-    width: 100%;
-    object-fit: fill;
-    object-fit: center;
-  }
-  .small-work-1 .content {
-    position: absolute;
-    background: rgb(255, 255, 255, .3);
-    inset: 0;
-    font-size: 3rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .small-work-1 .content,
-  .small-work-1 img {
-    transition: 150ms ease-in-out;
-    cursor: pointer;
-  }
-  
-  .small-work-1 .content.fade {
-    opacity: 0;
-  }
-  
-  .small-work-1:hover .content.fade {
-    opacity: 1;
-  }
-  
-  .small-work-1:hover img.blur {
-    filter: blur(3px);
-  }
-  
-  .small-work-1:hover img.zoom {
-    transform: scale(1.1);
-  }
-  
-  .small-work-1 img {
-    max-width: 100%;
-    object-fit: contain;
-  }
-}
-
-
-/** example project 3 **/
-/* styling for desktop devices */
-.small-work-2 {
-  padding: 10px;
-  width: 60%;
-  display: flex;
-  flex-direction: column-reverse;
-  color: white;
-  margin: auto;
-}
-
-.small-work-2 img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.small-work-2 .content {
-  margin: auto;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 18.72px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-
-/* styling for mobile screens */
-@media (min-width: 640px) {
-  .small-work-2 {
-  font-size: 1.8rem;
-  font-family: 'Poppins', sans-serif;
-  width: 40%;
-  align-content: center;
-  color: rgb(0, 0, 0);
-  margin: auto;
-  margin-top: 30px;
-  position: relative;
-  overflow: hidden;
-  }
-  .small-work-2 img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    object-fit: center;
-  }
-  .small-work-2 .content {
-    position: absolute;
-    background: rgb(255, 255, 255, .3);
-    inset: 0;
-    font-size: 3rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .small-work-2 .content,
-  .small-work-2 img {
-    transition: 150ms ease-in-out;
-    cursor: pointer;
-  }
-  
-  .small-work-2 .content.fade {
-    opacity: 0;
-  }
-  
-  .small-work-2:hover .content.fade {
-    opacity: 1;
-  }
-  
-  .small-work-2:hover img.blur {
-    filter: blur(3px);
-  }
-  
-  .small-work-2:hover img.zoom {
-    transform: scale(1.1);
-  }
-  
-  .small-work-2 img {
-    max-width: 100%;
-    object-fit: contain;
-  }
-}
-
-
-
-/*** example project 1 ***/
-/* stying for desktop devices */
+/** example project 1 **/
+/* stying for mobile devices */
 .big-work-container {
   padding: 20px; 
   width: 85%;
@@ -379,7 +188,7 @@ figure img {
 }
 
 
-/* stying for mobile monitors */
+/* stying for desktop monitors */
 @media (min-width: 640px) {
 .big-work-container {
   /* padding: 20px; */
@@ -439,6 +248,197 @@ figure img {
   }
 }
 
+/** container for two smaller images **/
+.smaller-work-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 2rem;
+  
+}
+/* container for mobile */
+@media (max-width: 640px) {
+  .smaller-work-container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    /* margin-top: 30px; */
+    position: relative;
+    overflow: hidden; 
+  }
+}
+
+/** example project 2 **/
+/* styling for mobile devices */
+.small-work-1 {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  margin: auto;
+}
+
+.small-work-1 img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.small-work-1 .content {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18.72px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* styling for desktop */
+@media (min-width: 640px) {
+  .small-work-1 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    align-content: center;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .small-work-1 img {
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    object-fit: center;
+  }
+  .small-work-1 .content {
+    position: absolute;
+    background: rgb(255, 255, 255, .3);
+    inset: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-work-1 .content,
+  .small-work-1 img {
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .small-work-1 .content.fade {
+    opacity: 0;
+  }
+  
+  .small-work-1:hover .content.fade {
+    opacity: 1;
+  }
+  
+  .small-work-1:hover img.blur {
+    filter: blur(3px);
+  }
+  
+  .small-work-1:hover img.zoom {
+    transform: scale(1.1);
+  }
+  
+  .small-work-1 img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+/** example project 3 **/
+/* styling for mobile devices */
+.small-work-2 {
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  margin: auto;
+}
+
+.small-work-2 img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.small-work-2 .content {
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18.72px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* styling for desktop screens */
+@media (min-width: 640px) {
+  .small-work-2 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  width: 40%;
+  align-content: center;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  }
+  .small-work-2 img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-fit: center;
+  }
+  .small-work-2 .content {
+    position: absolute;
+    background: rgb(255, 255, 255, .3);
+    inset: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-work-2 .content,
+  .small-work-2 img {
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .small-work-2 .content.fade {
+    opacity: 0;
+  }
+  
+  .small-work-2:hover .content.fade {
+    opacity: 1;
+  }
+  
+  .small-work-2:hover img.blur {
+    filter: blur(3px);
+  }
+  
+  .small-work-2:hover img.zoom {
+    transform: scale(1.1);
+  }
+  
+  .small-work-2 img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
 /*** FOOTER ***/
 footer {
   font-size: 1.5rem;
@@ -474,6 +474,7 @@ footer p a {
   padding: 0 0 0 6rem;
 }
 
+/* footer for mobile */
 @media (max-width: 640px) {
   .contactMe {
     justify-content: center;
